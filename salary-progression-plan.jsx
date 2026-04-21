@@ -119,7 +119,7 @@ export default function SalaryProgressionPlan() {
         {[
           { label: "Starting Base", value: "R$3,000", sub: "R$36k / yr", mono: true },
           { label: "Year 5 Base", value: "R$16,000", sub: "R$192k / yr", mono: true },
-          { label: "Tax Structure", value: "MEI", sub: "→ ME at Year 2", mono: false },
+          { label: "Tax Structure", value: "MEI", sub: "→ ME / PJ at Year 2", mono: false },
           { label: "Year 5 vs. Start", value: "5.3×", sub: "R$3k → R$16k base", mono: true, highlight: true },
         ].map((stat, i) => (
           <div key={i} style={{ background: "rgba(15, 23, 42, 0.8)", padding: "18px 20px", textAlign: "center" }}>
@@ -139,7 +139,7 @@ export default function SalaryProgressionPlan() {
       }}>
         <div style={{ fontSize: "18px", flexShrink: 0, marginTop: "1px" }}>⚠️</div>
         <div style={{ fontSize: "13px", color: "#CBD5E1", lineHeight: 1.7 }}>
-          <strong style={{ color: "#F59E0B" }}>MEI Revenue Cap:</strong> R$81,000/year (~R$6,750/mo avg). On base salary alone, hires stay MEI through Review #3 and migrate to <strong>ME</strong> under Simples Nacional at Review #4 (R$7,000/mo). <strong style={{ color: "#F8FAFC" }}>Commissions count toward MEI revenue</strong> — a colleague closing meaningful deals may need to migrate well before the salary alone would require it. Track total revenue (salary + commissions) monthly. Any tax/penalty exposure from unexpectedly exceeding the cap mid-year is handled case-by-case with an accountant.
+          <strong style={{ color: "#F59E0B" }}>MEI Revenue Cap:</strong> R$81,000/year (~R$6,750/mo avg). On base salary alone, hires stay MEI through Review #3 and migrate to <strong>ME / PJ</strong> under Simples Nacional at Review #4 (R$7,000/mo). <strong style={{ color: "#F8FAFC" }}>Commissions count toward MEI revenue</strong> — a colleague closing meaningful deals may need to migrate well before the salary alone would require it. Track total revenue (salary + commissions) monthly. Any tax/penalty exposure from unexpectedly exceeding the cap mid-year is handled case-by-case with an accountant.
         </div>
       </div>
 
@@ -234,7 +234,7 @@ export default function SalaryProgressionPlan() {
           color: "#94A3B8",
           lineHeight: 1.6,
         }}>
-          <strong style={{ color: "#60A5FA" }}>↑ MEI → ME Transition Point</strong> — At Review #4 (R$7,000/mo base), annual revenue exceeds the R$81,000 MEI cap. Commission earnings accelerate this — if they're closing deals, the migration may come sooner. Plan for ME transition at the 24-month mark.
+          <strong style={{ color: "#60A5FA" }}>↑ MEI → ME / PJ Transition Point</strong> — At Review #4 (R$7,000/mo base), annual revenue exceeds the R$81,000 MEI cap. Commission earnings accelerate this — if they're closing deals, the migration may come sooner. Plan for ME / PJ transition at the 24-month mark.
         </div>
 
         {/* PHASE 2 TABLE */}
@@ -483,7 +483,7 @@ export default function SalaryProgressionPlan() {
                 <div><strong style={{ color: "#F8FAFC" }}>Installment:</strong> Each member's share ÷ 20 = monthly payout for <strong>~20 months</strong>.</div>
                 <div><strong style={{ color: "#F8FAFC" }}>Month 5+:</strong> Recompute median with each new data point → recompute LTV → adjust.</div>
                 <div><strong style={{ color: "#F8FAFC" }}>Payout ends</strong> at month ~20 — <strong style={{ color: "#F87171" }}>or immediately if the client cancels</strong>. Any unpaid balance is forfeited.</div>
-                <div style={{ marginTop: "6px", fontSize: "11px", color: "#64748B", fontStyle: "italic" }}>The 20× multiplier is an example derived from average SaaS churn (~5%/mo → ~20-month customer lifetime). The actual value may differ — per project, per client segment, or as the company learns more about its own churn.</div>
+                <div style={{ marginTop: "6px", fontSize: "11px", color: "#64748B", fontStyle: "italic" }}>The 20× multiplier is derived from average SaaS churn (~5%/mo → ~20-month customer lifetime). Until a project-specific value is set, <strong style={{ color: "#94A3B8" }}>20× is the default</strong>. The company may revise it per project or segment as more churn data accumulates.</div>
               </div>
             </div>
 
@@ -609,7 +609,7 @@ export default function SalaryProgressionPlan() {
           padding: "24px",
           marginBottom: "8px",
         }}>
-          <div style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "1.5px", textTransform: "uppercase", color: "#64748B", marginBottom: "4px" }}>Worked Examples · R$10,000/mo Base · Solo Closer · 1st Deal of Year</div>
+          <div style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "1.5px", textTransform: "uppercase", color: "#64748B", marginBottom: "4px" }}>Worked Examples · R$10,000/mo Base · Solo Closer · 1st Deal of Year · unless noted</div>
           <div style={{ fontSize: "11px", color: "#64748B", marginBottom: "16px", fontStyle: "italic" }}>Assumes the current two-person team: 1 salaried colleague + founder occupying both active-partner and company slices. The salaried colleague does the engineering work (so engineering cost is real, deductable salary time). If the founder did the engineering instead, eng cost would be R$0 and the entire LTV would become the pool. <strong style={{ color: "#94A3B8" }}>AP</strong> = active partner; <strong style={{ color: "#94A3B8" }}>Co</strong> = company.</div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "14px" }}>
@@ -750,30 +750,10 @@ export default function SalaryProgressionPlan() {
         <div style={{ fontSize: "13px", color: "#94A3B8", lineHeight: 1.8 }}>
           <div style={{ marginBottom: "6px" }}><strong style={{ color: "#CBD5E1" }}>Commissions are optional for salaried hires without Associate status.</strong> Colleagues pursue deals during work hours with prior approval; core engineering responsibilities remain unchanged. For Associates, sales may become part of core duties depending on the project.</div>
           <div style={{ marginBottom: "6px" }}><strong style={{ color: "#CBD5E1" }}>Commissions apply only to personally-closed deals</strong> for salaried hires without Associate status. Associates, Co-founders, and Partners follow their respective track cards above for pool participation. Closers' shares are never diluted by adding partners or associates to the company.</div>
-          <div style={{ marginBottom: "6px" }}><strong style={{ color: "#CBD5E1" }}>Ongoing support is SaaS.</strong> Any recurring revenue from support/maintenance (on custom builds or consulting) follows the SaaS model: 3-month observation, engineering cost deducted first, pool split, each share paid over ~20 months.</div>
-          <div style={{ marginBottom: "6px" }}><strong style={{ color: "#CBD5E1" }}>True-up and clawback.</strong> If a recomputed median lowers the LTV and a member has been overpaid, the negative balance is deducted from the next commission — or from the next payment if no commission is queued. Underpayments are added to the next payment.</div>
-          <div><strong style={{ color: "#CBD5E1" }}>Tax structure:</strong> MEI (fixed ~R$82/mo) through Review #3, then migrates to ME / Simples Nacional. Commission revenue counts toward MEI cap.</div>
+          <div><strong style={{ color: "#CBD5E1" }}>Tax structure:</strong> MEI (fixed ~R$82/mo) through Review #3, then migrates to ME / PJ under Simples Nacional. Commission revenue counts toward MEI cap.</div>
         </div>
       </div>
 
-      {/* Closing Disclaimer */}
-      <div style={{
-        margin: "0 40px 48px",
-        padding: "22px 24px",
-        background: "linear-gradient(135deg, rgba(239, 68, 68, 0.08) 0%, rgba(245, 158, 11, 0.05) 100%)",
-        borderRadius: "12px",
-        border: "1px solid rgba(239, 68, 68, 0.25)",
-      }}>
-        <div style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "1.5px", textTransform: "uppercase", color: "#FCA5A5", marginBottom: "12px" }}>⚠️ Important · Please Read</div>
-        <div style={{ fontSize: "13px", color: "#E2E8F0", lineHeight: 1.8 }}>
-          <div style={{ marginBottom: "8px" }}>
-            <strong style={{ color: "#FCA5A5" }}>This document is not a contract</strong> and the terms described herein may change at any time without prior notice. It represents the current intent and best-effort plan — not a binding commitment.
-          </div>
-          <div>
-            <strong style={{ color: "#FCA5A5" }}>Salary progression is not guaranteed.</strong> The path shown is a <strong style={{ color: "#F8FAFC" }}>tentative progression</strong>, contingent on the colleague meeting performance expectations, on business results, and on funding. If expectations aren't met, or if funding or market conditions shift, this progression may be <strong style={{ color: "#F8FAFC" }}>halted, delayed, or revised suddenly and unexpectedly</strong>, for an undisclosed duration.
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
