@@ -185,8 +185,8 @@ export default function SalaryProgressionPlan() {
         <table style={{ width: "100%", borderCollapse: "separate", borderSpacing: "0", fontSize: "14px", minWidth: "780px" }}>
           <thead>
             <tr>
-              {["Review", "Month", "Level", "Base BRL", "Raise", "Regime"].map((h, i) => (
-                <th key={i} style={{ textAlign: i === 3 || i === 4 ? "right" : "left", padding: "10px 14px", fontSize: "10px", fontWeight: 700, letterSpacing: "1.5px", textTransform: "uppercase", color: "#475569", borderBottom: "2px solid rgba(148, 163, 184, 0.15)", whiteSpace: "nowrap" }}>{h}</th>
+              {["Review", "Month", "Level", "Base BRL", "Raise", "Raise %", "Regime"].map((h, i) => (
+                <th key={i} style={{ textAlign: i === 3 || i === 4 || i === 5 ? "right" : "left", padding: "10px 14px", fontSize: "10px", fontWeight: 700, letterSpacing: "1.5px", textTransform: "uppercase", color: "#475569", borderBottom: "2px solid rgba(148, 163, 184, 0.15)", whiteSpace: "nowrap" }}>{h}</th>
               ))}
             </tr>
           </thead>
@@ -206,6 +206,7 @@ export default function SalaryProgressionPlan() {
                   </td>
                   <td style={{ padding: "13px 14px", textAlign: "right", fontFamily: "'JetBrains Mono', monospace", fontWeight: 700, fontSize: "14px", color: "#F8FAFC", borderBottom: "1px solid rgba(148, 163, 184, 0.08)" }}>R${row.brl.toLocaleString()}</td>
                   <td style={{ padding: "13px 14px", textAlign: "right", fontFamily: "'JetBrains Mono', monospace", fontSize: "12px", color: row.month === 0 ? "#475569" : "#10B981", fontWeight: row.month === 0 ? 400 : 600, borderBottom: "1px solid rgba(148, 163, 184, 0.08)" }}>{row.delta}</td>
+                  <td style={{ padding: "13px 14px", textAlign: "right", fontFamily: "'JetBrains Mono', monospace", fontSize: "12px", color: row.month === 0 ? "#475569" : "#10B981", fontWeight: row.month === 0 ? 400 : 600, borderBottom: "1px solid rgba(148, 163, 184, 0.08)" }}>{row.pctIncrease}</td>
                   <td style={{ padding: "13px 14px", borderBottom: "1px solid rgba(148, 163, 184, 0.08)" }}>
                     <span style={{
                       display: "inline-block",
@@ -248,8 +249,8 @@ export default function SalaryProgressionPlan() {
         <table style={{ width: "100%", borderCollapse: "separate", borderSpacing: "0", fontSize: "14px", minWidth: "780px" }}>
           <thead>
             <tr>
-              {["Review", "Month", "Level", "Base BRL", "Raise", "Regime"].map((h, i) => (
-                <th key={i} style={{ textAlign: i === 3 || i === 4 ? "right" : "left", padding: "10px 14px", fontSize: "10px", fontWeight: 700, letterSpacing: "1.5px", textTransform: "uppercase", color: "#475569", borderBottom: "2px solid rgba(148, 163, 184, 0.15)", whiteSpace: "nowrap" }}>{h}</th>
+              {["Review", "Month", "Level", "Base BRL", "Raise", "Raise %", "Regime"].map((h, i) => (
+                <th key={i} style={{ textAlign: i === 3 || i === 4 || i === 5 ? "right" : "left", padding: "10px 14px", fontSize: "10px", fontWeight: 700, letterSpacing: "1.5px", textTransform: "uppercase", color: "#475569", borderBottom: "2px solid rgba(148, 163, 184, 0.15)", whiteSpace: "nowrap" }}>{h}</th>
               ))}
             </tr>
           </thead>
@@ -270,6 +271,7 @@ export default function SalaryProgressionPlan() {
                   </td>
                   <td style={{ padding: "13px 14px", textAlign: "right", fontFamily: "'JetBrains Mono', monospace", fontWeight: 700, fontSize: "14px", color: "#F8FAFC", borderBottom: "1px solid rgba(148, 163, 184, 0.08)" }}>R${row.brl.toLocaleString()}</td>
                   <td style={{ padding: "13px 14px", textAlign: "right", fontFamily: "'JetBrains Mono', monospace", fontSize: "12px", color: "#10B981", fontWeight: 600, borderBottom: "1px solid rgba(148, 163, 184, 0.08)" }}>{row.delta}</td>
+                  <td style={{ padding: "13px 14px", textAlign: "right", fontFamily: "'JetBrains Mono', monospace", fontSize: "12px", color: "#10B981", fontWeight: 600, borderBottom: "1px solid rgba(148, 163, 184, 0.08)" }}>{row.pctIncrease}</td>
                   <td style={{ padding: "13px 14px", borderBottom: "1px solid rgba(148, 163, 184, 0.08)" }}>
                     <span style={{
                       display: "inline-block", background: "rgba(59, 130, 246, 0.12)", color: "#60A5FA",
@@ -454,7 +456,7 @@ export default function SalaryProgressionPlan() {
           Three revenue streams. Three ways to earn.
         </h2>
         <p style={{ fontSize: "14px", color: "#94A3B8", lineHeight: 1.7, maxWidth: "760px", marginBottom: "28px" }}>
-          Sales activity is voluntary <em>for salaried colleagues without Associate status</em>; for Associates, sales may become part of core duties as the project requires. Three streams, one universal split: <strong style={{ color: "#CBD5E1" }}>deal closer(s) + at least one active partner + any associates on this project + company</strong>. <em>Active partner = the project's accountable lead, designated by the company; may or may not be a Year 5+ Partner.</em> Closers sell, engineers build; engineers are paid via salary (deducted as engineering cost before the split). <strong style={{ color: "#CBD5E1" }}>One person may occupy multiple slices</strong> — in the current two-person team, the founder stands in for both the active-partner slice and the company slice, so a deal closed by a colleague splits 2/3 to the founder, 1/3 to the closer. Commissions stack on top of base salary with <strong style={{ color: "#CBD5E1" }}>no ceiling</strong>.
+          Sales activity is voluntary <em>for salaried colleagues without Associate status</em>; for Associates, sales may become part of core duties as the project requires. Three streams, one universal split: <strong style={{ color: "#CBD5E1" }}>deal closer(s) + at least one active partner + any associates on this project + company</strong>. <em>Active partner = whoever is actively leading and/or managing the project in which they hold a slice. The role can be filled by an Associate, a Project Co-founder, or a Year 5+ Partner — whichever of them is accountable for this particular project, designated by the company. The active-partner slice is earned for the leadership/management role and stacks on top of any role-specific slice the person already holds on the project.</em> Closers sell, engineers build; engineers are paid via salary (deducted as engineering cost before the split). <strong style={{ color: "#CBD5E1" }}>One person may occupy multiple slices</strong> — in the current two-person team, the founder stands in for both the active-partner slice and the company slice, so a deal closed by a colleague splits 2/3 to the founder, 1/3 to the closer. Commissions stack on top of base salary with <strong style={{ color: "#CBD5E1" }}>no ceiling</strong>.
         </p>
 
         {/* 3 Commission Cards */}
@@ -478,7 +480,7 @@ export default function SalaryProgressionPlan() {
               <div style={{ fontSize: "12px", color: "#CBD5E1", lineHeight: 1.7 }}>
                 <div><strong style={{ color: "#F8FAFC" }}>Month 1–3:</strong> Observation window. Track monthly revenue.</div>
                 <div><strong style={{ color: "#F8FAFC" }}>Month 4:</strong> Median of first 3 months → <strong style={{ color: "#F8FAFC" }}>LTV ≈ 20 × median revenue</strong>.</div>
-                <div><strong style={{ color: "#F8FAFC" }}>Engineering cost</strong> = salaries of <em>salaried</em> delivery engineers, proportional to time worked. Partners, Co-founders, and the founder don't draw salary — their engineering time on a project isn't a cost to deduct; it's compensated via their pool slice.</div>
+                <div><strong style={{ color: "#F8FAFC" }}>Engineering cost</strong> = salaries of <em>salaried</em> delivery engineers, proportional to time worked. Partners, Co-founders, and the founder don't draw salary — their engineering time on a project isn't a cost to deduct; it's compensated via their pool slice. Associates are salaried, so their engineering time IS deducted as cost; the Associate slice is separate compensation for project-wide ownership beyond engineering.</div>
                 <div><strong style={{ color: "#F8FAFC" }}>Net pool</strong> = LTV − Engineering cost. Pool divides among slice-holders; slice weights are equal by default, with closers earning additional slices via the Closer Loyalty Bonus (see below).</div>
                 <div><strong style={{ color: "#F8FAFC" }}>Installment:</strong> Each member's share ÷ 20 = monthly payout for <strong>~20 months</strong>.</div>
                 <div><strong style={{ color: "#F8FAFC" }}>Month 5+:</strong> Recompute median with each new data point → recompute LTV → adjust.</div>
