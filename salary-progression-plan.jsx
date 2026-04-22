@@ -69,6 +69,20 @@ export default function SalaryProgressionPlan() {
   const compactListStyle = { margin: 0, paddingLeft: "18px", display: "grid", gap: "6px" };
   const compactListItemStyle = { color: "#CBD5E1", lineHeight: 1.65 };
   const mutedListItemStyle = { color: "#94A3B8", lineHeight: 1.65 };
+  const compactCardStyle = {
+    background: "rgba(15, 23, 42, 0.55)",
+    borderRadius: "12px",
+    padding: "16px 18px",
+    border: "1px solid rgba(148, 163, 184, 0.12)",
+  };
+  const compactCardTitleStyle = {
+    fontSize: "10px",
+    fontWeight: 700,
+    letterSpacing: "1.4px",
+    textTransform: "uppercase",
+    marginBottom: "8px",
+  };
+  const compactCardTextStyle = { fontSize: "12px", color: "#94A3B8", lineHeight: 1.65 };
 
   return (
     <div style={{
@@ -92,7 +106,7 @@ export default function SalaryProgressionPlan() {
           Software Engineering · Data Engineering · Data Science
           <br />
           <span style={{ fontSize: "14px", color: "#64748B" }}>
-            6-month review ladder with optional commissions. Starts on Microempreendedor Individual (MEI). On the base-only path, the usual move to Microempresa / Pessoa Jurídica (ME / PJ) is at year 2.
+            6-month review ladder with optional commissions and three track options. Starts on Microempreendedor Individual (MEI). On the base-only path, the usual move to Microempresa / Pessoa Jurídica (ME / PJ) is at Review #4 (year 2).
           </span>
         </p>
       </div>
@@ -157,12 +171,49 @@ export default function SalaryProgressionPlan() {
         </div>
       </div>
 
+      {/* Quick Read */}
+      <div style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+        gap: "12px",
+        margin: "20px 40px 0",
+      }}>
+        <div style={{ ...compactCardStyle, borderColor: "rgba(59, 130, 246, 0.2)" }}>
+          <div style={{ ...compactCardTitleStyle, color: "#60A5FA" }}>Quick Read · Ladder</div>
+          <div style={compactCardTextStyle}>
+            10 reviews across 5 years. Base salary moves from <strong style={{ color: "#F8FAFC" }}>R$3,000</strong> to <strong style={{ color: "#F8FAFC" }}>R$16,000</strong>.
+          </div>
+        </div>
+        <div style={{ ...compactCardStyle, borderColor: "rgba(245, 158, 11, 0.2)" }}>
+          <div style={{ ...compactCardTitleStyle, color: "#F59E0B" }}>Quick Read · Tax Path</div>
+          <div style={compactCardTextStyle}>
+            Base-only pay usually stays on <strong style={{ color: "#F8FAFC" }}>MEI</strong> through Review #3 and moves to <strong style={{ color: "#F8FAFC" }}>ME / PJ</strong> at Review #4. Commissions can force an earlier move.
+          </div>
+        </div>
+        <div style={{ ...compactCardStyle, borderColor: "rgba(34, 211, 238, 0.2)" }}>
+          <div style={{ ...compactCardTitleStyle, color: "#22D3EE" }}>Quick Read · Tracks</div>
+          <div style={compactCardTextStyle}>
+            <strong style={{ color: "#F8FAFC" }}>Associate</strong> keeps salary and adds one capped project slice. <strong style={{ color: "#F8FAFC" }}>Project Co-founder</strong> swaps salary for an uncapped project stake. <strong style={{ color: "#F8FAFC" }}>Partner</strong> swaps salary for a company-wide stake.
+          </div>
+        </div>
+        <div style={{ ...compactCardStyle, borderColor: "rgba(244, 63, 94, 0.2)" }}>
+          <div style={{ ...compactCardTitleStyle, color: "#FB7185" }}>Quick Read · Bonuses</div>
+          <div style={compactCardTextStyle}>
+            Closer loyalty grows with each qualified deal in the calendar year. The annual merit bonus is separate, discretionary, and based on <strong style={{ color: "#F8FAFC" }}>total annual earnings</strong>.
+          </div>
+        </div>
+      </div>
+
       {/* Controls */}
       <div style={{ display: "flex", justifyContent: "flex-start", alignItems: "center", padding: "24px 40px 8px", flexWrap: "wrap", gap: "12px" }}>
         <div style={{ display: "flex", gap: "16px", flexWrap: "wrap", alignItems: "center" }}>
           <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "#94A3B8", fontWeight: 500 }}>
             <span style={{ width: "14px", height: "3px", background: "#3B82F6", borderRadius: "2px" }} />
             Base Salary
+          </span>
+          <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "12px", color: "#94A3B8", fontWeight: 500 }}>
+            <span style={{ width: "14px", height: "0", borderTop: "2px dashed #F59E0B" }} />
+            MEI Cap
           </span>
         </div>
       </div>
@@ -491,17 +542,37 @@ export default function SalaryProgressionPlan() {
         <h2 style={{ fontSize: "22px", fontWeight: 800, color: "#F8FAFC", margin: "8px 0 16px 0", letterSpacing: "-0.5px" }}>
           Three revenue streams. One pool logic.
         </h2>
-        <div style={{ maxWidth: "820px", marginBottom: "28px", fontSize: "13px", color: "#CBD5E1", lineHeight: 1.7 }}>
+        <div style={{ maxWidth: "820px", marginBottom: "14px", fontSize: "13px", color: "#CBD5E1", lineHeight: 1.7 }}>
           <div style={{ color: "#94A3B8", marginBottom: "10px" }}>
             Sales is voluntary <em>for salaried colleagues without Associate status</em>. For Associates, it may become part of the role. The same pool logic applies to Software as a Service (SaaS), Custom Build, and Consulting.
           </div>
-          <ul style={compactListStyle}>
-            <li style={compactListItemStyle}>Baseline split seats: <strong style={{ color: "#CBD5E1" }}>deal closer(s) + at least one active partner + company + any additional Associates on the project</strong>. If the active partner is also an Associate, that is still one baseline non-closer seat unless a later rule says otherwise.</li>
-            <li style={compactListItemStyle}><strong style={{ color: "#F8FAFC" }}>Active partner</strong> = the person the company designates to lead and manage the project. That can be the founder, an Associate, a Project Co-founder, or a Year 5+ Partner. The active-partner slice pays for that role.</li>
-            <li style={compactListItemStyle}><strong style={{ color: "#F8FAFC" }}>Stacking rule:</strong> founders, Project Co-founders on their own project, and closers may hold multiple slices. Closer slices always stack. Everyone else gets one slice per project unless this document says otherwise.</li>
-            <li style={compactListItemStyle}>Closers sell; engineers build. Salaried engineering time is deducted as <strong style={{ color: "#F8FAFC" }}>engineering cost</strong> before the split. Founder, Partners, and Project Co-founders are paid through pool slices, so their engineering time is not deducted as cost. Associates are salaried, so their delivery time is deducted; the Associate slice separately pays for broader project ownership beyond engineering.</li>
-            <li style={compactListItemStyle}>In the current two-person team, the founder holds both the active-partner and company slices. So a colleague's <strong style={{ color: "#F8FAFC" }}>first qualified deal of the year</strong> pays <strong style={{ color: "#F8FAFC" }}>1/3 to the closer and 2/3 to the founder/company side</strong>. Later qualified deals scale through the Closer Loyalty Bonus below. For salaried colleagues, closer commissions stack on top of base salary with <strong style={{ color: "#CBD5E1" }}>no ceiling</strong>; Associate slices still follow the caps above.</li>
-          </ul>
+        </div>
+
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "12px", marginBottom: "28px" }}>
+          <div style={{ ...compactCardStyle, borderColor: "rgba(245, 158, 11, 0.2)" }}>
+            <div style={{ ...compactCardTitleStyle, color: "#F59E0B" }}>Baseline Seats</div>
+            <div style={compactCardTextStyle}>
+              <strong style={{ color: "#F8FAFC" }}>deal closer(s) + at least one active partner + company + any additional Associates on the project</strong>. If the active partner is also an Associate, that still counts as one baseline non-closer seat unless a later rule says otherwise.
+            </div>
+          </div>
+          <div style={{ ...compactCardStyle, borderColor: "rgba(34, 211, 238, 0.2)" }}>
+            <div style={{ ...compactCardTitleStyle, color: "#22D3EE" }}>Active Partner + Stacking</div>
+            <div style={compactCardTextStyle}>
+              The <strong style={{ color: "#F8FAFC" }}>active partner</strong> is the company-designated project lead. That can be the founder, an Associate, a Project Co-founder, or a Year 5+ Partner. Closer slices always stack. Founders and Project Co-founders on their own project may also stack. Everyone else gets one slice per project unless this document says otherwise.
+            </div>
+          </div>
+          <div style={{ ...compactCardStyle, borderColor: "rgba(139, 92, 246, 0.2)" }}>
+            <div style={{ ...compactCardTitleStyle, color: "#A78BFA" }}>Cost Basis</div>
+            <div style={compactCardTextStyle}>
+              Deduct <strong style={{ color: "#F8FAFC" }}>salaried delivery engineering time</strong> before the split. Founder, Partners, and Project Co-founders are paid through pool slices, so their engineering time is not deducted as cost. Associates are salaried, so delivery time is deducted; the Associate slice separately pays for broader project ownership beyond engineering.
+            </div>
+          </div>
+          <div style={{ ...compactCardStyle, borderColor: "rgba(16, 185, 129, 0.2)" }}>
+            <div style={{ ...compactCardTitleStyle, color: "#34D399" }}>Current Team Baseline</div>
+            <div style={compactCardTextStyle}>
+              In the current two-person team, the founder holds both the <strong style={{ color: "#F8FAFC" }}>active-partner</strong> and <strong style={{ color: "#F8FAFC" }}>company</strong> slices. A colleague&apos;s <strong style={{ color: "#F8FAFC" }}>first qualified deal of the year</strong> therefore pays <strong style={{ color: "#F8FAFC" }}>1/3 to the closer and 2/3 to the founder/company side</strong>. Closer commissions stack on top of salary with <strong style={{ color: "#F8FAFC" }}>no ceiling</strong>; Associate slices still follow the caps above.
+            </div>
+          </div>
         </div>
 
         {/* 3 Commission Cards */}
@@ -617,7 +688,7 @@ export default function SalaryProgressionPlan() {
             <table style={{ width: "100%", minWidth: "440px", borderCollapse: "separate", borderSpacing: "0", fontSize: "12px" }}>
               <thead>
                 <tr>
-                  {["Deal #", "Your Slices", "Other Slices (Active Partner + Company)", "Your % of Pool", "Closer : Company Slice"].map((h, i) => (
+                  {["Deal #", "Your Slices", "Other Slices (Active Partner + Company)", "Your % of Pool", "Closer : Company Seat"].map((h, i) => (
                     <th key={i} style={{ textAlign: i === 0 ? "left" : "right", padding: "8px 12px", fontSize: "10px", fontWeight: 700, letterSpacing: "1.2px", textTransform: "uppercase", color: "#94A3B8", borderBottom: "1px solid rgba(245, 158, 11, 0.25)" }}>{h}</th>
                   ))}
                 </tr>
@@ -659,7 +730,9 @@ export default function SalaryProgressionPlan() {
           marginBottom: "8px",
         }}>
           <div style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "1.5px", textTransform: "uppercase", color: "#64748B", marginBottom: "4px" }}>Worked Examples · R$10,000/mo Base · Solo Closer · 1st Deal of Year · unless noted</div>
-          <div style={{ fontSize: "11px", color: "#64748B", marginBottom: "16px", fontStyle: "italic" }}>Assumptions: current two-person team; 1 salaried colleague plus the founder holding both the active-partner and company slices. The colleague does the engineering, so salary time is a real, <strong style={{ color: "#94A3B8" }}>deductible</strong> engineering cost. If the founder did the work instead, engineering cost would be R$0 and the full LTV would become the pool. In the SaaS examples below, <strong style={{ color: "#94A3B8" }}>founder/company side retains</strong> means revenue left after the closer payout, including the engineering-cost recovery already on that side. <strong style={{ color: "#94A3B8" }}>AP</strong> = active partner; <strong style={{ color: "#94A3B8" }}>Co</strong> = company.</div>
+          <div style={{ fontSize: "11px", color: "#64748B", marginBottom: "16px", fontStyle: "italic", lineHeight: 1.7 }}>
+            Assumptions: current two-person team; 1 salaried colleague and the founder, who holds both the active-partner and company slices. The colleague does the engineering, so salary time is a real, <strong style={{ color: "#94A3B8" }}>deductible</strong> engineering cost; if the founder did the work instead, engineering cost would be R$0 and the full LTV would become the pool. In the SaaS examples, <strong style={{ color: "#94A3B8" }}>founder/company side retains</strong> means revenue left after the closer payout, including engineering-cost recovery already on that side. <strong style={{ color: "#94A3B8" }}>AP</strong> = active partner. <strong style={{ color: "#94A3B8" }}>Co</strong> = company.
+          </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "14px" }}>
             <div style={{ padding: "14px 16px", background: "rgba(139, 92, 246, 0.06)", borderRadius: "8px", borderLeft: "3px solid #8B5CF6" }}>
