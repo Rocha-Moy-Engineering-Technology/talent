@@ -461,7 +461,7 @@ export default function SalaryProgressionPlan() {
           Three revenue streams. Three ways to earn.
         </h2>
         <p style={{ fontSize: "14px", color: "#94A3B8", lineHeight: 1.7, maxWidth: "760px", marginBottom: "28px" }}>
-          Sales activity is voluntary <em>for salaried colleagues without Associate status</em>; for Associates, sales may become part of core duties as the project requires. Three streams, one universal split: <strong style={{ color: "#CBD5E1" }}>deal closer(s) + at least one active partner + any associates on this project + company</strong>. <em>Active partner = whoever is actively leading and/or managing the project in which they hold a slice. The role can be filled by an Associate, a Project Co-founder, or a Year 5+ Partner — whichever of them is accountable for this particular project, designated by the company. The active-partner slice is earned for the leadership/management role. Stacking rules are covered under Pool stacking in the Partner card above.</em> Closers sell, engineers build; engineers are paid via salary (deducted as engineering cost before the split). <strong style={{ color: "#CBD5E1" }}>Founders, co-founders, and closers may hold multiple pool slices.</strong> Founders and co-founders stack per Pool stacking in the Partner card. The closer slice always lands on top of any other slice the closer holds on the same project — so an active partner who closes their own deal earns both the active-partner and closer slices. For everyone else, it is one slice per project. In the current two-person team, the founder stands in for both the active-partner slice and the company slice, so a deal closed by a colleague splits 2/3 to the founder, 1/3 to the closer. Commissions stack on top of base salary with <strong style={{ color: "#CBD5E1" }}>no ceiling</strong>.
+          Sales activity is voluntary <em>for salaried colleagues without Associate status</em>; for Associates, sales may become part of core duties as the project requires. Three streams, one universal split: <strong style={{ color: "#CBD5E1" }}>deal closer(s) + at least one active partner + any associates on this project + company</strong>. <em>Active partner = whoever is actively leading and/or managing the project in which they hold a slice. The role can be filled by an Associate, a Project Co-founder, or a Year 5+ Partner — whichever of them is accountable for this particular project, designated by the company. The active-partner slice is earned for the leadership/management role. Stacking rules are covered under Pool stacking in the Partner card above.</em> Closers sell, engineers build; engineers are paid via salary (deducted as engineering cost before the split). <strong style={{ color: "#CBD5E1" }}>Founders, co-founders, and closers may hold multiple pool slices.</strong> A founder or co-founder active on a project takes both the active-partner slice and their existing pool position (a share of the company's slice for the founder, the project-level slice for a Project Co-founder). A closer always earns the closer slice on top of any other slice they hold — so a closer who is also the active partner on the project takes both the active-partner and closer slices. For everyone else, it is one slice per project. In the current two-person team, the founder stands in for both the active-partner slice and the company slice, so a deal closed by a colleague splits 2/3 to the founder, 1/3 to the closer. Commissions stack on top of base salary with <strong style={{ color: "#CBD5E1" }}>no ceiling</strong>.
         </p>
 
         {/* 3 Commission Cards */}
@@ -604,7 +604,7 @@ export default function SalaryProgressionPlan() {
 
           <div style={{ marginTop: "14px", fontSize: "11px", color: "#64748B", lineHeight: 1.6, fontStyle: "italic" }}>
             Counter advances <strong style={{ color: "#94A3B8" }}>once per deal</strong>, when the deal qualifies. <strong style={{ color: "#94A3B8" }}>SaaS:</strong> at month 4, after 3 consecutive months of revenue from the client and a positive net pool at the initial median. <strong style={{ color: "#94A3B8" }}>Custom Build / Consulting:</strong> when work ships and the client has paid in full. Subsequent monthly payouts and any later true-ups don't re-advance the counter. Cancelled or never-qualifying deals don't advance the counter.<br /><br />
-            Table assumes the 3-slice baseline (closer + AP + company, no associates). Each active partner, each associate, and the company holds 1 slice — so 2 active partners + 1 associate + the company = 4 non-closer slices, plus the closer's slice(s) on top. Co-closers count the deal toward each of their individual counters. Applies to all three streams (SaaS, Custom Build, Consulting). In-flight 20-month payouts continue to schedule even after a closer leaves the company.
+            The table shows the 3-slice baseline: closer + active partner + company. Other configurations add slices: each active partner, each associate, and the company each hold 1 slice, with the closer's N slice(s) on top (e.g., 2 active partners + 1 associate + company = 4 non-closer slices, plus the closer). When two people co-close a deal, each advances their own yearly counter for it. The loyalty bonus applies across all three streams — SaaS, Custom Build, and Consulting. A closer's in-flight 20-month payouts continue on schedule even after they leave the company.
           </div>
         </div>
 
@@ -626,7 +626,7 @@ export default function SalaryProgressionPlan() {
                 Revenue R$500/mo → LTV R$10,000.<br />
                 Eng cost (0.2 mo) = R$2,000.<br />
                 Pool R$8,000 → 3 slices ≈ R$2,667.<br />
-                Closer → <strong style={{ color: "#F8FAFC", fontFamily: "'JetBrains Mono', monospace" }}>R$133/mo × 20</strong>. Founder (AP+Co) R$5,333.
+                Closer → <strong style={{ color: "#F8FAFC", fontFamily: "'JetBrains Mono', monospace" }}>R$133/mo × 20</strong>. Founder keeps R$367/mo (R$500 − R$133) over those 20 months; full R$500/mo after.
               </div>
             </div>
             <div style={{ padding: "14px 16px", background: "rgba(139, 92, 246, 0.06)", borderRadius: "8px", borderLeft: "3px solid #8B5CF6" }}>
@@ -635,7 +635,7 @@ export default function SalaryProgressionPlan() {
                 Revenue R$1,250/mo → LTV R$25,000.<br />
                 Eng cost (0.5 mo) = R$5,000.<br />
                 Pool R$20,000 → 3 slices ≈ R$6,667.<br />
-                Closer takes 33% (1 slice) → <strong style={{ color: "#F8FAFC", fontFamily: "'JetBrains Mono', monospace" }}>R$333/mo × 20</strong>. Founder (AP+Co) R$13,333.
+                Closer takes 33% (1 slice) → <strong style={{ color: "#F8FAFC", fontFamily: "'JetBrains Mono', monospace" }}>R$333/mo × 20</strong>. Founder keeps R$917/mo (R$1,250 − R$333) over those 20 months; full R$1,250/mo after.
               </div>
             </div>
             <div style={{ padding: "14px 16px", background: "rgba(139, 92, 246, 0.06)", borderRadius: "8px", borderLeft: "3px solid #8B5CF6" }}>
@@ -644,7 +644,7 @@ export default function SalaryProgressionPlan() {
                 Revenue R$5,000/mo → LTV R$100,000.<br />
                 Eng cost (2 mo) = R$20,000.<br />
                 Pool R$80,000 → 3 slices ≈ R$26,667.<br />
-                Closer → <strong style={{ color: "#F8FAFC", fontFamily: "'JetBrains Mono', monospace" }}>R$1,333/mo × 20</strong>. Founder (AP+Co) R$53,333.
+                Closer → <strong style={{ color: "#F8FAFC", fontFamily: "'JetBrains Mono', monospace" }}>R$1,333/mo × 20</strong>. Founder keeps R$3,667/mo (R$5,000 − R$1,333) over those 20 months; full R$5,000/mo after.
               </div>
             </div>
             <div style={{ padding: "14px 16px", background: "rgba(139, 92, 246, 0.06)", borderRadius: "8px", borderLeft: "3px solid #8B5CF6" }}>
@@ -653,7 +653,7 @@ export default function SalaryProgressionPlan() {
                 Revenue R$5k/mo → LTV R$100,000.<br />
                 Eng cost R$20,000 → Pool R$80,000.<br />
                 4 slices (2 closers + AP + co) = R$20,000.<br />
-                Each closer → <strong style={{ color: "#F8FAFC", fontFamily: "'JetBrains Mono', monospace" }}>R$1,000/mo × 20</strong>. Founder R$40,000.
+                Each closer → <strong style={{ color: "#F8FAFC", fontFamily: "'JetBrains Mono', monospace" }}>R$1,000/mo × 20</strong>. Founder keeps R$3,000/mo (R$5,000 − 2×R$1,000) over those 20 months; full R$5,000/mo after.
               </div>
             </div>
             <div style={{ padding: "14px 16px", background: "rgba(236, 72, 153, 0.06)", borderRadius: "8px", borderLeft: "3px solid #EC4899" }}>
@@ -679,7 +679,7 @@ export default function SalaryProgressionPlan() {
                 Existing product resold to new client.<br />
                 Revenue R$1,250/mo → LTV R$25,000.<br />
                 Eng cost = R$0. Pool R$25,000 → 3 slices ≈ R$8,333.<br />
-                Closer → <strong style={{ color: "#F8FAFC", fontFamily: "'JetBrains Mono', monospace" }}>R$417/mo × 20</strong>.
+                Closer → <strong style={{ color: "#F8FAFC", fontFamily: "'JetBrains Mono', monospace" }}>R$417/mo × 20</strong>. Founder keeps R$833/mo (R$1,250 − R$417) over those 20 months; full R$1,250/mo after.
               </div>
             </div>
             <div style={{ padding: "14px 16px", background: "rgba(245, 158, 11, 0.08)", borderRadius: "8px", borderLeft: "3px solid #F59E0B" }}>
@@ -688,7 +688,7 @@ export default function SalaryProgressionPlan() {
                 Same R$20k pool as the Mid Client above.<br />
                 Closer is 3 slices, AP + co = 2 slices.<br />
                 5 total slices → R$4,000 each.<br />
-                Closer takes 60% (3 slices) → <strong style={{ color: "#F8FAFC", fontFamily: "'JetBrains Mono', monospace" }}>R$600/mo × 20</strong> (vs. 33% on Deal 1).
+                Closer takes 60% (3 slices) → <strong style={{ color: "#F8FAFC", fontFamily: "'JetBrains Mono', monospace" }}>R$600/mo × 20</strong> (vs. 33% on Deal 1). Founder keeps R$650/mo (R$1,250 − R$600) over those 20 months; full R$1,250/mo after.
               </div>
             </div>
           </div>
