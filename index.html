@@ -15,7 +15,7 @@
   <div id="root"></div>
   <script>
     (async () => {
-      const src = await (await fetch("./salary-progression-plan.jsx")).text();
+      const src = await (await fetch("./salary-progression-plan.jsx?t=" + Date.now(), { cache: "no-store" })).text();
       const prelude =
         "const { XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine, Area, ComposedChart } = Recharts;\n";
       const body = src
