@@ -544,7 +544,7 @@ export default function SalaryProgressionPlan() {
         </h2>
         <div style={{ maxWidth: "820px", marginBottom: "14px", fontSize: "13px", color: "#CBD5E1", lineHeight: 1.7 }}>
           <div style={{ color: "#94A3B8", marginBottom: "10px" }}>
-            Sales is voluntary <em>for salaried colleagues without Associate status</em>. For Associates, it may be part of the role. The same pool logic applies to Software as a Service (SaaS), Custom Build, and Consulting.
+            Sales is voluntary <em>for salaried colleagues without Associate status</em>. For Associates, sales may be part of the role. The same pool logic applies to Software as a Service (SaaS), Custom Build, and Consulting.
           </div>
         </div>
 
@@ -558,13 +558,13 @@ export default function SalaryProgressionPlan() {
           <div style={{ ...compactCardStyle, borderColor: "rgba(34, 211, 238, 0.2)" }}>
             <div style={{ ...compactCardTitleStyle, color: "#22D3EE" }}>Active Partner + Stacking</div>
             <div style={compactCardTextStyle}>
-              The <strong style={{ color: "#F8FAFC" }}>active partner</strong> is the company-designated project lead: founder, Associate, Project Co-founder, or Year 5+ Partner. Closer slices always stack. Founders, future company co-founders, Project Co-founders on their own project, and Senior Partners may also stack when active. Everyone else gets one slice per project unless this document says otherwise.
+              The <strong style={{ color: "#F8FAFC" }}>active partner</strong> is the company-designated project lead: founder, Associate, Project Co-founder, or Year 5+ Partner. Closer slices always stack. When active, founders, future company co-founders, Project Co-founders on their own project, and Senior Partners may also stack. Everyone else gets one slice per project unless this document says otherwise.
             </div>
           </div>
           <div style={{ ...compactCardStyle, borderColor: "rgba(139, 92, 246, 0.2)" }}>
             <div style={{ ...compactCardTitleStyle, color: "#A78BFA" }}>Cost Basis</div>
             <div style={compactCardTextStyle}>
-              Deduct <strong style={{ color: "#F8FAFC" }}>salaried delivery engineering time</strong> before the split. Founder, Partners, and Project Co-founders are paid through pool slices, so their engineering time is not booked as cost. Associate delivery time is booked as cost; the Associate slice separately pays for broader project ownership beyond engineering.
+              Deduct <strong style={{ color: "#F8FAFC" }}>salaried delivery engineering time</strong> before the split. Founder, Partners, and Project Co-founders are paid through pool slices, so their engineering time is not booked as cost. Associate delivery time is booked as cost because the Associate slice separately pays for broader project ownership beyond engineering.
             </div>
           </div>
           <div style={{ ...compactCardStyle, borderColor: "rgba(16, 185, 129, 0.2)" }}>
