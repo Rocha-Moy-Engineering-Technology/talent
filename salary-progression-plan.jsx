@@ -106,7 +106,7 @@ export default function SalaryProgressionPlan() {
           Software Engineering · Data Engineering · Data Science
           <br />
           <span style={{ fontSize: "14px", color: "#64748B" }}>
-            6-month review ladder. Optional commissions. Three tracks. Starts on Microempreendedor Individual (MEI). On the base-only path, the usual move to Microempresa / Pessoa Jurídica (ME / PJ) is Review #4 (year 2).
+            6-month review ladder. Optional commissions. Three tracks. Starts on Microempreendedor Individual (MEI). On the base-only path, the usual move to Microempresa / Pessoa Jurídica (ME / PJ) is Review #4 in year 2.
           </span>
         </p>
       </div>
@@ -126,8 +126,8 @@ export default function SalaryProgressionPlan() {
         <div style={{ fontSize: "13px", color: "#E2E8F0", lineHeight: 1.7 }}>
           <div style={{ color: "#FCA5A5", fontWeight: 700, marginBottom: "6px" }}>This is not a contract.</div>
           <ul style={compactListStyle}>
-            <li style={compactListItemStyle}>This is a <strong style={{ color: "#F8FAFC" }}>tentative compensation roadmap</strong>. It may change at any time.</li>
-            <li style={compactListItemStyle}>Salary progression is <strong style={{ color: "#F8FAFC" }}>not guaranteed</strong>. Raises depend on performance, company results, and funding. They may be paused, delayed, or revised at any review.</li>
+            <li style={compactListItemStyle}>This is a <strong style={{ color: "#F8FAFC" }}>tentative compensation roadmap</strong>. It can change at any time.</li>
+            <li style={compactListItemStyle}>Salary progression is <strong style={{ color: "#F8FAFC" }}>not guaranteed</strong>. Raises depend on performance, company results, and funding, and may be paused, delayed, or revised at any review.</li>
             <li style={compactListItemStyle}>Commission rules, thresholds, and tax guidance may change as the company learns.</li>
           </ul>
         </div>
@@ -164,9 +164,9 @@ export default function SalaryProgressionPlan() {
         <div style={{ fontSize: "13px", color: "#CBD5E1", lineHeight: 1.7 }}>
           <div style={{ color: "#F59E0B", fontWeight: 700, marginBottom: "6px" }}>MEI Revenue Cap: R$81,000/year (~R$6,750/mo average).</div>
           <ul style={compactListStyle}>
-            <li style={compactListItemStyle}>Base salary alone usually keeps hires on <strong style={{ color: "#F8FAFC" }}>MEI</strong> through Review #3. The usual move to <strong style={{ color: "#F8FAFC" }}>ME / PJ</strong> under Simples Nacional is Review #4 (R$7,000/mo).</li>
+            <li style={compactListItemStyle}>Base salary alone usually keeps you on <strong style={{ color: "#F8FAFC" }}>MEI</strong> through Review #3. On the base-only path, the usual move to <strong style={{ color: "#F8FAFC" }}>ME / PJ</strong> under Simples Nacional is Review #4 (R$7,000/mo).</li>
             <li style={compactListItemStyle}><strong style={{ color: "#F8FAFC" }}>Commissions also count toward MEI revenue</strong>, so steady deal flow may force an earlier migration.</li>
-            <li style={compactListItemStyle}>Track monthly revenue as <strong style={{ color: "#F8FAFC" }}>salary + commissions</strong>. If the cap is crossed mid-year, any tax or penalty exposure is handled case by case with an accountant.</li>
+            <li style={compactListItemStyle}>Track monthly revenue as <strong style={{ color: "#F8FAFC" }}>salary + commissions</strong>. If you cross the cap mid-year, any tax or penalty exposure is handled case by case with an accountant.</li>
           </ul>
         </div>
       </div>
@@ -193,7 +193,7 @@ export default function SalaryProgressionPlan() {
         <div style={{ ...compactCardStyle, borderColor: "rgba(34, 211, 238, 0.2)" }}>
           <div style={{ ...compactCardTitleStyle, color: "#22D3EE" }}>Quick Read · Tracks</div>
           <div style={compactCardTextStyle}>
-            <strong style={{ color: "#F8FAFC" }}>Associate</strong> keeps salary and adds one capped project slice. <strong style={{ color: "#F8FAFC" }}>Project Co-founder</strong> swaps salary for one uncapped project stake. <strong style={{ color: "#F8FAFC" }}>Partner</strong> swaps salary for a company-wide stake.
+            <strong style={{ color: "#F8FAFC" }}>Associate</strong> keeps salary and adds one capped project slice. <strong style={{ color: "#F8FAFC" }}>Project Co-founder</strong> replaces salary with one uncapped project stake. <strong style={{ color: "#F8FAFC" }}>Partner</strong> replaces salary with a company-wide stake.
           </div>
         </div>
         <div style={{ ...compactCardStyle, borderColor: "rgba(244, 63, 94, 0.2)" }}>
@@ -371,7 +371,7 @@ export default function SalaryProgressionPlan() {
             <div style={{ flex: 1, minWidth: "240px" }}>
               <div style={{ fontSize: "22px", fontWeight: 800, color: "#F8FAFC", marginBottom: "4px", letterSpacing: "-0.3px" }}>Associate</div>
               <div style={{ fontSize: "14px", color: "#94A3B8", lineHeight: 1.6 }}>
-                Stay on the salary ladder. In return, own one internal product, software as a service (SaaS), or service line end to end and receive a project-scoped commission slice.
+                Stay on the salary ladder. You own one internal product, software as a service (SaaS), or service line end to end and receive a project-scoped commission slice.
               </div>
             </div>
           </div>
@@ -381,14 +381,14 @@ export default function SalaryProgressionPlan() {
               <div style={{ fontSize: "10px", fontWeight: 700, letterSpacing: "1.5px", textTransform: "uppercase", color: "#22D3EE", marginBottom: "8px" }}>You Take On</div>
               <div style={{ fontSize: "15px", fontWeight: 700, color: "#F8FAFC", marginBottom: "6px" }}>End-to-End Ownership</div>
               <div style={{ fontSize: "12px", color: "#94A3B8", lineHeight: 1.6 }}>
-                You own the outcome across engineering, sales, management, customer service, operations, and coordination. This goes beyond code ownership.
+                You own the outcome across engineering, sales, management, customer service, operations, and coordination. This is broader than code ownership.
               </div>
             </div>
             <div style={{ padding: "16px 18px", background: "rgba(16, 185, 129, 0.06)", borderRadius: "10px", borderLeft: "3px solid #34D399" }}>
               <div style={{ fontSize: "10px", fontWeight: 700, letterSpacing: "1.5px", textTransform: "uppercase", color: "#34D399", marginBottom: "8px" }}>You Gain</div>
               <div style={{ fontSize: "15px", fontWeight: 700, color: "#F8FAFC", marginBottom: "6px" }}>One Project-Pool Slice</div>
               <ul style={compactListStyle}>
-                <li style={mutedListItemStyle}>You get one equal slice of that project's pool under the active-partner equal-split mechanics. It applies only to that project, stacks with closer slices, and keeps your base salary in place.</li>
+                <li style={mutedListItemStyle}>You get one equal slice of that project's pool under the active-partner equal-split mechanics. It applies only to that project, stacks with closer slices, and keeps your base salary.</li>
                 <li style={mutedListItemStyle}><strong style={{ color: "#FCD34D" }}>Cap:</strong> in any month, commission from one Associate engagement cannot exceed your <strong style={{ color: "#F8FAFC" }}>monthly base salary</strong>.</li>
                 <li style={mutedListItemStyle}>The cap is per project, per month. Multiple Associate engagements may stack across projects. Any excess on one project returns to the company slice.</li>
                 <li style={mutedListItemStyle}><em>If you later become a Project Co-founder on that project, that project's slice becomes uncapped. Any Associate roles you keep elsewhere stay capped against your virtual progression.</em></li>
@@ -427,7 +427,7 @@ export default function SalaryProgressionPlan() {
             <div style={{ flex: 1, minWidth: "240px" }}>
               <div style={{ fontSize: "22px", fontWeight: 800, color: "#F8FAFC", marginBottom: "4px", letterSpacing: "-0.3px" }}>Project Co-founder</div>
               <div style={{ fontSize: "14px", color: "#94A3B8", lineHeight: 1.6 }}>
-                A deeper bet on one project: salary ends, and you take an uncapped partner-level stake in that project instead of across the company.
+                A deeper bet on one project: salary ends, and you take an uncapped partner-level stake in that project rather than across the company.
               </div>
             </div>
           </div>
@@ -437,7 +437,7 @@ export default function SalaryProgressionPlan() {
               <div style={{ fontSize: "10px", fontWeight: 700, letterSpacing: "1.5px", textTransform: "uppercase", color: "#F87171", marginBottom: "8px" }}>You Give Up</div>
               <div style={{ fontSize: "15px", fontWeight: 700, color: "#F8FAFC", marginBottom: "6px" }}>Base Salary</div>
               <div style={{ fontSize: "12px", color: "#94A3B8", lineHeight: 1.6 }}>
-                Guaranteed monthly base pay ends. You remain part of the company, but income now comes from this project's commissions and any other commission roles you still hold.
+                Guaranteed monthly base pay ends. You remain part of the company, but income now comes from this project's commissions and any other commission roles you keep.
               </div>
             </div>
             <div style={{ padding: "16px 18px", background: "rgba(16, 185, 129, 0.06)", borderRadius: "10px", borderLeft: "3px solid #34D399" }}>
@@ -460,7 +460,7 @@ export default function SalaryProgressionPlan() {
             <div style={{ color: "#22D3EE", fontWeight: 700, marginBottom: "6px" }}>Keeping Associate roles on other projects.</div>
             <ul style={compactListStyle}>
               <li style={compactListItemStyle}>When you become a Co-founder, the company decides whether any Associate engagements on other projects remain in place.</li>
-              <li style={compactListItemStyle}>Any retained Associate engagement stays capped monthly. Because you no longer draw salary, the cap follows the salary your <strong style={{ color: "#F8FAFC" }}>virtual progression</strong> would have reached on the ladder, and that progression still advances every 6 months.</li>
+              <li style={compactListItemStyle}>Any retained Associate engagement stays capped monthly. Because you no longer draw salary, the cap follows the salary your <strong style={{ color: "#F8FAFC" }}>virtual progression</strong> would have reached on the ladder, which still advances every 6 months.</li>
               <li style={compactListItemStyle}>Each retained Associate engagement can pay up to that virtual monthly amount while you stay uncapped on your Co-founder project.</li>
               <li style={compactListItemStyle}>Holding Co-founder status on more than one project is possible, though expected to be rare. Each Co-founder project remains individually uncapped.</li>
               <li style={compactListItemStyle}><em>More complex multi-role combinations (for example, Partner + Co-founder + Associate) are handled case-by-case as the team grows.</em></li>
@@ -489,7 +489,7 @@ export default function SalaryProgressionPlan() {
             <div style={{ flex: 1, minWidth: "240px" }}>
               <div style={{ fontSize: "22px", fontWeight: 800, color: "#F8FAFC", marginBottom: "4px", letterSpacing: "-0.3px" }}>Partner</div>
               <div style={{ fontSize: "14px", color: "#94A3B8", lineHeight: 1.6 }}>
-                Trade salary for a stake across the company.
+                Trade salary for a company-wide stake.
               </div>
             </div>
           </div>
@@ -544,7 +544,7 @@ export default function SalaryProgressionPlan() {
         </h2>
         <div style={{ maxWidth: "820px", marginBottom: "14px", fontSize: "13px", color: "#CBD5E1", lineHeight: 1.7 }}>
           <div style={{ color: "#94A3B8", marginBottom: "10px" }}>
-            Sales is voluntary <em>for salaried colleagues without Associate status</em>. For Associates, it may become part of the role. The same pool logic applies to Software as a Service (SaaS), Custom Build, and Consulting.
+            Sales is voluntary <em>for salaried colleagues without Associate status</em>. For Associates, it may be part of the role. The same pool logic applies to Software as a Service (SaaS), Custom Build, and Consulting.
           </div>
         </div>
 
@@ -552,7 +552,7 @@ export default function SalaryProgressionPlan() {
           <div style={{ ...compactCardStyle, borderColor: "rgba(245, 158, 11, 0.2)" }}>
             <div style={{ ...compactCardTitleStyle, color: "#F59E0B" }}>Baseline Seats</div>
             <div style={compactCardTextStyle}>
-              <strong style={{ color: "#F8FAFC" }}>deal closer(s) + at least one active partner + company + any additional project Associates</strong>. If the active partner is also an Associate, that still counts as one baseline non-closer seat unless a later rule says otherwise.
+              <strong style={{ color: "#F8FAFC" }}>deal closer(s) + at least one active partner + company + any additional project Associates</strong>. If the active partner is also an Associate, that still counts as one baseline non-closer seat unless a later rule overrides it.
             </div>
           </div>
           <div style={{ ...compactCardStyle, borderColor: "rgba(34, 211, 238, 0.2)" }}>
@@ -570,7 +570,7 @@ export default function SalaryProgressionPlan() {
           <div style={{ ...compactCardStyle, borderColor: "rgba(16, 185, 129, 0.2)" }}>
             <div style={{ ...compactCardTitleStyle, color: "#34D399" }}>Current Team Baseline</div>
             <div style={compactCardTextStyle}>
-              In the current two-person team, the founder holds both the <strong style={{ color: "#F8FAFC" }}>active-partner</strong> and <strong style={{ color: "#F8FAFC" }}>company</strong> slices. A colleague&apos;s <strong style={{ color: "#F8FAFC" }}>first qualified deal of the year</strong> therefore pays <strong style={{ color: "#F8FAFC" }}>1/3 to the closer and 2/3 to the founder/company side</strong>. Closer commissions stack on top of salary with <strong style={{ color: "#F8FAFC" }}>no ceiling</strong>; Associate slices still follow the caps above.
+              In the current two-person team, the founder holds both the <strong style={{ color: "#F8FAFC" }}>active-partner</strong> and <strong style={{ color: "#F8FAFC" }}>company</strong> slices. A colleague&apos;s <strong style={{ color: "#F8FAFC" }}>first qualified deal of the year</strong> therefore pays <strong style={{ color: "#F8FAFC" }}>1/3 to the closer and 2/3 to the founder/company side</strong>. Closer commissions stack on top of salary with <strong style={{ color: "#F8FAFC" }}>no ceiling</strong>. Associate slices still follow the caps above.
             </div>
           </div>
         </div>
@@ -731,7 +731,7 @@ export default function SalaryProgressionPlan() {
         }}>
           <div style={{ fontSize: "11px", fontWeight: 700, letterSpacing: "1.5px", textTransform: "uppercase", color: "#64748B", marginBottom: "4px" }}>Worked Examples · R$10,000/mo Base · Solo Closer · 1st Deal of Year · unless noted</div>
           <div style={{ fontSize: "11px", color: "#64748B", marginBottom: "16px", fontStyle: "italic", lineHeight: 1.7 }}>
-            Assumptions: current two-person team; 1 salaried colleague plus the founder, who holds both the active-partner and company slices. The colleague does the engineering, so salary time is a real, <strong style={{ color: "#94A3B8" }}>deductible</strong> engineering cost. If the founder did the work, engineering cost would be R$0 and the full LTV would become the pool. In the SaaS examples, <strong style={{ color: "#94A3B8" }}>founder/company side retains</strong> means the revenue left after the closer payout, including engineering-cost recovery already on that side. <strong style={{ color: "#94A3B8" }}>AP</strong> = active partner. <strong style={{ color: "#94A3B8" }}>Co</strong> = company.
+            Assumptions: current two-person team; 1 salaried colleague plus the founder, who holds both the active-partner and company slices. The colleague does the engineering, so that salary time is a real, <strong style={{ color: "#94A3B8" }}>deductible</strong> engineering cost. If the founder did the work, engineering cost would be R$0 and the full LTV would become the pool. In the SaaS examples, <strong style={{ color: "#94A3B8" }}>founder/company side retains</strong> means the revenue left after the closer payout, including engineering-cost recovery already on that side. <strong style={{ color: "#94A3B8" }}>AP</strong> = active partner. <strong style={{ color: "#94A3B8" }}>Co</strong> = company.
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "14px" }}>
@@ -830,7 +830,7 @@ export default function SalaryProgressionPlan() {
           </div>
 
           <div style={{ fontSize: "13.5px", color: "#CBD5E1", lineHeight: 1.7, marginBottom: "20px", maxWidth: "800px" }}>
-            At year-end, the company may award a discretionary merit bonus set as a <strong style={{ color: "#F8FAFC" }}>percentage of total annual earnings</strong>. Base salary and all commission income count equally, including Associate slices. It is reserved for exceptional contribution.
+            At year-end, the company may award a discretionary merit bonus set as a <strong style={{ color: "#F8FAFC" }}>percentage of total annual earnings</strong>. Base salary and all commission income count equally, including Associate slices. The bonus is reserved for exceptional contribution.
           </div>
 
           <div style={{ fontSize: "10px", fontWeight: 700, letterSpacing: "1.5px", textTransform: "uppercase", color: "#94A3B8", marginBottom: "10px" }}>
@@ -872,7 +872,7 @@ export default function SalaryProgressionPlan() {
         <div style={{ fontSize: "13px", color: "#94A3B8", lineHeight: 1.8, display: "flex", flexDirection: "column", gap: "8px" }}>
           <div><strong style={{ color: "#CBD5E1" }}>Personally-closed deals only.</strong> Base salaried colleagues (without Associate status) earn commissions only from deals they personally close.</div>
           <div><strong style={{ color: "#CBD5E1" }}>Track-specific pool participation.</strong> Associates, Project Co-founders, and Partners participate in commission pools under the track rules above.</div>
-          <div><strong style={{ color: "#CBD5E1" }}>Company growth alone does not dilute closers.</strong> Adding people elsewhere in the company does not reduce a closer's share. A closer's percentage changes only when that specific project adds extra slice-holders; those seats come out of what would otherwise stay on the company side.</div>
+          <div><strong style={{ color: "#CBD5E1" }}>Company growth alone does not dilute closers.</strong> Adding people elsewhere in the company does not reduce a closer's share. That percentage changes only when that specific project adds extra slice-holders; those seats come out of what would otherwise stay on the company side.</div>
         </div>
       </div>
       </div>
