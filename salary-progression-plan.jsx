@@ -106,7 +106,7 @@ export default function SalaryProgressionPlan() {
           Software Engineering · Data Engineering · Data Science
           <br />
           <span style={{ fontSize: "14px", color: "#64748B" }}>
-            6-month reviews. Optional commissions. Three upside tracks.
+            6-month reviews. Optional commissions. Three career tracks.
           </span>
         </p>
       </div>
@@ -376,7 +376,7 @@ export default function SalaryProgressionPlan() {
                 <li style={mutedListItemStyle}>You receive one equal slice of that project&apos;s pool under the active-partner equal-split rules. It applies only to that project, stacks with closer slices, and does not change base salary.</li>
                 <li style={mutedListItemStyle}><strong style={{ color: "#FCD34D" }}>Cap:</strong> monthly commission from one Associate role cannot exceed your <strong style={{ color: "#F8FAFC" }}>monthly base salary</strong>.</li>
                 <li style={mutedListItemStyle}>The cap is per project, per month. Multiple Associate roles can stack across projects. Any excess on a project goes back to the company slice.</li>
-                <li style={mutedListItemStyle}><em>If you later become that project&apos;s Project Co-founder, that project becomes uncapped. Any Associate roles you keep elsewhere remain capped against your virtual progression.</em></li>
+                <li style={mutedListItemStyle}><em>If you later become that project&apos;s Project Co-founder, that project becomes uncapped. Any Associate roles you keep elsewhere remain capped against your virtual salary progression.</em></li>
               </ul>
             </div>
             <div style={{ padding: "16px 18px", background: "rgba(139, 92, 246, 0.06)", borderRadius: "10px", borderLeft: "3px solid #A78BFA" }}>
@@ -509,7 +509,7 @@ export default function SalaryProgressionPlan() {
           <div style={{ marginTop: "16px", padding: "14px 18px", background: "rgba(248, 250, 252, 0.06)", borderRadius: "10px", borderLeft: "3px solid #F8FAFC", fontSize: "12px", color: "#CBD5E1", lineHeight: 1.7 }}>
             <div style={{ color: "#F8FAFC", fontWeight: 700, marginBottom: "6px" }}>Pool stacking.</div>
             <ul style={compactListStyle}>
-              <li style={compactListItemStyle}>When active, founders, future company co-founders, Senior Partners, and Project Co-founders on their own project stack. They receive both the active-partner slice and their company- or project-level slice on that project.</li>
+              <li style={compactListItemStyle}>Stacking means receiving both the active-partner slice <strong style={{ color: "#F8FAFC" }}>and</strong> your company- or project-level slice on the same project. These roles stack on projects where they are active: founders and Senior Partners. A Project Co-founder stacks only on their own project.</li>
               <li style={compactListItemStyle}>A regular Partner does <strong style={{ color: "#F8FAFC" }}>not</strong> stack. They get one project slice: the active-partner slice when active, or a share of the company slice when not.</li>
               <li style={compactListItemStyle}><strong style={{ color: "#F8FAFC" }}>Senior Partner:</strong> the company may promote a Partner at its discretion. Senior Partners stack like founders and co-founders on projects where they are active. Terms are negotiated per promotion.</li>
             </ul>
@@ -543,7 +543,7 @@ export default function SalaryProgressionPlan() {
             <div style={{ ...compactCardStyle, borderColor: "rgba(34, 211, 238, 0.2)" }}>
             <div style={{ ...compactCardTitleStyle, color: "#22D3EE" }}>Active Partner + Stacking</div>
             <div style={compactCardTextStyle}>
-              The <strong style={{ color: "#F8FAFC" }}>active partner</strong> is the company-designated project lead: founder, future company co-founder, Associate, Project Co-founder, or Year 5+ Partner. Closer slices always stack. When active, founders, future company co-founders, Project Co-founders on their own project, and Senior Partners may also stack. Unless a rule says otherwise, everyone else gets one slice per project.
+              The <strong style={{ color: "#F8FAFC" }}>active partner</strong> is the company-designated project lead: founder, Associate, Project Co-founder, or Year 5+ Partner. Closer slices always stack. When active, founders, Project Co-founders on their own project, and Senior Partners may also stack. Unless a rule says otherwise, everyone else gets one slice per project.
             </div>
           </div>
             <div style={{ ...compactCardStyle, borderColor: "rgba(139, 92, 246, 0.2)" }}>
