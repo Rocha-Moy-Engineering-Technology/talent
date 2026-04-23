@@ -543,7 +543,7 @@ export default function SalaryProgressionPlan() {
             <div style={{ ...compactCardStyle, borderColor: "rgba(34, 211, 238, 0.2)" }}>
             <div style={{ ...compactCardTitleStyle, color: "#22D3EE" }}>Active Partner + Stacking</div>
             <div style={compactCardTextStyle}>
-              The <strong style={{ color: "#F8FAFC" }}>active partner</strong> is the company-designated project lead: founder, Associate, Project Co-founder, or Year 5+ Partner. Closer slices always stack. When active, founders, Project Co-founders on their own project, and Senior Partners may also stack. Unless a rule says otherwise, everyone else gets one slice per project.
+              The <strong style={{ color: "#F8FAFC" }}>active partner</strong> is the company-designated project lead: founder, Associate, Project Co-founder, or Year 5+ Partner. Closer slices stack for everyone except a regular Partner, who gets one project slice regardless of how many deals they close. When active, founders, Project Co-founders on their own project, and Senior Partners may also stack. Unless a rule says otherwise, everyone else gets one slice per project.
             </div>
           </div>
             <div style={{ ...compactCardStyle, borderColor: "rgba(139, 92, 246, 0.2)" }}>
@@ -703,6 +703,7 @@ export default function SalaryProgressionPlan() {
             <li style={mutedListItemStyle}>The table shows the 3-slice baseline: closer + active partner + company. Other setups add one non-closer slice for each extra active partner or Associate, with the closer&apos;s N slices on top.</li>
             <li style={mutedListItemStyle}>When two people co-close a deal, each advances their own yearly counter. The loyalty bonus applies across Software as a Service (SaaS), Custom Build, and Consulting.</li>
             <li style={mutedListItemStyle}>A closer&apos;s in-flight 20-month SaaS payouts continue on schedule even after the closer leaves the company.</li>
+            <li style={mutedListItemStyle}>A <strong style={{ color: "#94A3B8" }}>regular Partner closing a deal does not stack</strong>: they count as one slice regardless of N. The loyalty table above applies to non-Partner closers.</li>
           </ul>
         </div>
 
