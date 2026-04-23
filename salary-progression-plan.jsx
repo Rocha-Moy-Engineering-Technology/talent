@@ -106,7 +106,7 @@ export default function SalaryProgressionPlan() {
           Software Engineering · Data Engineering · Data Science
           <br />
           <span style={{ fontSize: "14px", color: "#64748B" }}>
-            6-month reviews. Optional commissions. Three upside tracks.
+            6-month reviews. Optional commissions. Three career tracks.
           </span>
         </p>
       </div>
