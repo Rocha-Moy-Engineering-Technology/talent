@@ -543,7 +543,7 @@ export default function SalaryProgressionPlan() {
             <div style={{ ...compactCardStyle, borderColor: "rgba(34, 211, 238, 0.2)" }}>
             <div style={{ ...compactCardTitleStyle, color: "#22D3EE" }}>Active Partner + Stacking</div>
             <div style={compactCardTextStyle}>
-              The <strong style={{ color: "#F8FAFC" }}>active partner</strong> is the company-designated project lead: founder, Associate, Project Co-founder, or Year 5+ Partner. Closer slices always stack. When active, founders, Project Co-founders on their own project, and Senior Partners may also stack. Unless a rule says otherwise, everyone else gets one slice per project.
+              The <strong style={{ color: "#F8FAFC" }}>active partner</strong> is the company-designated project lead: founder, Associate, Project Co-founder, or Year 5+ Partner. Closer slices stack on top of any other slice, except for regular Partners, who receive one slice per project regardless of whether they closed. When active, founders, Project Co-founders on their own project, and Senior Partners may also stack. Unless a rule says otherwise, everyone else gets one slice per project.
             </div>
           </div>
             <div style={{ ...compactCardStyle, borderColor: "rgba(139, 92, 246, 0.2)" }}>
