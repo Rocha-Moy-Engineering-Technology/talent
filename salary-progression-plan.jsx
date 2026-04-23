@@ -509,7 +509,7 @@ export default function SalaryProgressionPlan() {
           <div style={{ marginTop: "16px", padding: "14px 18px", background: "rgba(248, 250, 252, 0.06)", borderRadius: "10px", borderLeft: "3px solid #F8FAFC", fontSize: "12px", color: "#CBD5E1", lineHeight: 1.7 }}>
             <div style={{ color: "#F8FAFC", fontWeight: 700, marginBottom: "6px" }}>Pool stacking.</div>
             <ul style={compactListStyle}>
-              <li style={compactListItemStyle}>When active, founders, future company co-founders, Senior Partners, and Project Co-founders on their own project stack. They receive both the active-partner slice and their company- or project-level slice on that project.</li>
+              <li style={compactListItemStyle}>Stacking means receiving both the active-partner slice <strong style={{ color: "#F8FAFC" }}>and</strong> your company- or project-level slice on the same project. These roles stack on projects where they are active: founders, future company co-founders, and Senior Partners. A Project Co-founder stacks only on their own project.</li>
               <li style={compactListItemStyle}>A regular Partner does <strong style={{ color: "#F8FAFC" }}>not</strong> stack. They get one project slice: the active-partner slice when active, or a share of the company slice when not.</li>
               <li style={compactListItemStyle}><strong style={{ color: "#F8FAFC" }}>Senior Partner:</strong> the company may promote a Partner at its discretion. Senior Partners stack like founders and co-founders on projects where they are active. Terms are negotiated per promotion.</li>
             </ul>
